@@ -14,21 +14,18 @@ contador_17 contador0 (CLK,17'b0,rst_contador0,X0,1'b0,Q0);
 //por limites de diseño la comparacion maxima solo se da en palabras de 16bits
 //el MSB se compara por aparte y se integran resultados
 wire mayor0;
-comparador_16 comparador0(.A(Q0[15:0]),.B(16'd100000),.mayor(mayor0));
-
-wire mayor0_1;
-or_2 or0(Q0[16],~1'b1,mayor0_1);
+comparador_16 comparador0(.A(Q0[15:0]),.B(16'd99999),.mayor(mayor0));
 
 wire ms_0;
-and_2 and0(mayor0,mayor0_1,ms_0);
+and_2 and0(mayor0,Q0[16],ms_0);
 //retorno para el contador 0
 
 wire ci;
-or_3 or1(ms_0,ci,RST,rst_contador0);
+or_3 or0(ms_0,ci,RST,rst_contador0);
 
 //or par el reset del flipflop
 wire rst_flop;
-or_2 or2(ci,RST,rst_flop);
+or_2 or1(ci,RST,rst_flop);
 //flipflop de start y control de contadores
 flip_flop_t ff0(CLK,Start,rst_flop,1'b1,X0);
 
@@ -48,7 +45,6 @@ wire[6:0] LCD;
 deco_seg_7 lcd0(bcd,LCD);
 
 
-reg[6:0] i;
 initial begin
 		// Initialize Inputs
 		Start = 0;RST = 0;

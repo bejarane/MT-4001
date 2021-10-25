@@ -1,0 +1,222 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Sun Oct 24 22:59:49 2021
+# Process ID: 16141
+# Current directory: /home/anxiety/Dropbox/tec/2021/periodo 2/digitales/git_end/tareas_diseño/tarea_diseño_2/diseño_2/diseño_2.runs/synth_1
+# Command line: vivado -log main_tb.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source main_tb.tcl
+# Log file: /home/anxiety/Dropbox/tec/2021/periodo 2/digitales/git_end/tareas_diseño/tarea_diseño_2/diseño_2/diseño_2.runs/synth_1/main_tb.vds
+# Journal file: /home/anxiety/Dropbox/tec/2021/periodo 2/digitales/git_end/tareas_diseño/tarea_diseño_2/diseño_2/diseño_2.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source main_tb.tcl -notrace
+Command: synth_design -top main_tb -part xc7a35tcpg236-2L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 16179
+WARNING: [Synth 8-2292] literal value truncated to fit in 16 bits [/home/anxiety/Dropbox/tec/2021/periodo 2/digitales/git_end/tareas_diseño/tarea_diseño_2/diseño_2/diseño_2.srcs/sources_1/new/main.v:17]
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2442.391 ; gain = 0.000 ; free physical = 613 ; free virtual = 8367
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'main_tb' [/home/anxiety/Dropbox/tec/2021/periodo 2/digitales/git_end/tareas_diseño/tarea_diseño_2/diseño_2/diseño_2.srcs/sources_1/new/main_tb.v:1]
+INFO: [Synth 8-6157] synthesizing module 'main' [/home/anxiety/Dropbox/tec/2021/periodo 2/digitales/git_end/tareas_diseño/tarea_diseño_2/diseño_2/diseño_2.srcs/sources_1/new/main.v:1]
+INFO: [Synth 8-6157] synthesizing module 'contador_17' [/home/anxiety/Dropbox/tec/2021/periodo 2/digitales/git_end/tareas_diseño/tarea_diseño_2/diseño_2/diseño_2.srcs/sources_1/new/contador_17.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'contador_17' (1#1) [/home/anxiety/Dropbox/tec/2021/periodo 2/digitales/git_end/tareas_diseño/tarea_diseño_2/diseño_2/diseño_2.srcs/sources_1/new/contador_17.v:1]
+INFO: [Synth 8-6157] synthesizing module 'comparador_16' [/home/anxiety/Dropbox/tec/2021/periodo 2/digitales/git_end/tareas_diseño/tarea_diseño_2/diseño_2/diseño_2.srcs/sources_1/new/comparador_16.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'comparador_16' (2#1) [/home/anxiety/Dropbox/tec/2021/periodo 2/digitales/git_end/tareas_diseño/tarea_diseño_2/diseño_2/diseño_2.srcs/sources_1/new/comparador_16.v:1]
+WARNING: [Synth 8-7071] port 'igual' of module 'comparador_16' is unconnected for instance 'comparador0' [/home/anxiety/Dropbox/tec/2021/periodo 2/digitales/git_end/tareas_diseño/tarea_diseño_2/diseño_2/diseño_2.srcs/sources_1/new/main.v:17]
+WARNING: [Synth 8-7071] port 'menor' of module 'comparador_16' is unconnected for instance 'comparador0' [/home/anxiety/Dropbox/tec/2021/periodo 2/digitales/git_end/tareas_diseño/tarea_diseño_2/diseño_2/diseño_2.srcs/sources_1/new/main.v:17]
+WARNING: [Synth 8-7023] instance 'comparador0' of module 'comparador_16' has 5 connections declared, but only 3 given [/home/anxiety/Dropbox/tec/2021/periodo 2/digitales/git_end/tareas_diseño/tarea_diseño_2/diseño_2/diseño_2.srcs/sources_1/new/main.v:17]
+INFO: [Synth 8-6157] synthesizing module 'and_2' [/home/anxiety/Dropbox/tec/2021/periodo 2/digitales/git_end/tareas_diseño/tarea_diseño_2/diseño_2/diseño_2.srcs/sources_1/new/and_2.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'and_2' (3#1) [/home/anxiety/Dropbox/tec/2021/periodo 2/digitales/git_end/tareas_diseño/tarea_diseño_2/diseño_2/diseño_2.srcs/sources_1/new/and_2.v:1]
+INFO: [Synth 8-6157] synthesizing module 'or_3' [/home/anxiety/Dropbox/tec/2021/periodo 2/digitales/git_end/tareas_diseño/tarea_diseño_2/diseño_2/diseño_2.srcs/sources_1/new/or_3.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'or_3' (4#1) [/home/anxiety/Dropbox/tec/2021/periodo 2/digitales/git_end/tareas_diseño/tarea_diseño_2/diseño_2/diseño_2.srcs/sources_1/new/or_3.v:1]
+INFO: [Synth 8-6157] synthesizing module 'or_2' [/home/anxiety/Dropbox/tec/2021/periodo 2/digitales/git_end/tareas_diseño/tarea_diseño_2/diseño_2/diseño_2.srcs/sources_1/new/or_2.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'or_2' (5#1) [/home/anxiety/Dropbox/tec/2021/periodo 2/digitales/git_end/tareas_diseño/tarea_diseño_2/diseño_2/diseño_2.srcs/sources_1/new/or_2.v:1]
+INFO: [Synth 8-6157] synthesizing module 'flip_flop_t' [/home/anxiety/Dropbox/tec/2021/periodo 2/digitales/git_end/tareas_diseño/tarea_diseño_2/diseño_2/diseño_2.srcs/sources_1/new/flip_flop_t.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'flip_flop_t' (6#1) [/home/anxiety/Dropbox/tec/2021/periodo 2/digitales/git_end/tareas_diseño/tarea_diseño_2/diseño_2/diseño_2.srcs/sources_1/new/flip_flop_t.v:1]
+INFO: [Synth 8-6157] synthesizing module 'contador_7' [/home/anxiety/Dropbox/tec/2021/periodo 2/digitales/git_end/tareas_diseño/tarea_diseño_2/diseño_2/diseño_2.srcs/sources_1/new/contador_7.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'contador_7' (7#1) [/home/anxiety/Dropbox/tec/2021/periodo 2/digitales/git_end/tareas_diseño/tarea_diseño_2/diseño_2/diseño_2.srcs/sources_1/new/contador_7.v:1]
+INFO: [Synth 8-6157] synthesizing module 'comparador_7' [/home/anxiety/Dropbox/tec/2021/periodo 2/digitales/git_end/tareas_diseño/tarea_diseño_2/diseño_2/diseño_2.srcs/sources_1/new/comparador_7.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'comparador_7' (8#1) [/home/anxiety/Dropbox/tec/2021/periodo 2/digitales/git_end/tareas_diseño/tarea_diseño_2/diseño_2/diseño_2.srcs/sources_1/new/comparador_7.v:23]
+WARNING: [Synth 8-7071] port 'igual' of module 'comparador_7' is unconnected for instance 'comparador1' [/home/anxiety/Dropbox/tec/2021/periodo 2/digitales/git_end/tareas_diseño/tarea_diseño_2/diseño_2/diseño_2.srcs/sources_1/new/main.v:37]
+WARNING: [Synth 8-7071] port 'menor' of module 'comparador_7' is unconnected for instance 'comparador1' [/home/anxiety/Dropbox/tec/2021/periodo 2/digitales/git_end/tareas_diseño/tarea_diseño_2/diseño_2/diseño_2.srcs/sources_1/new/main.v:37]
+WARNING: [Synth 8-7023] instance 'comparador1' of module 'comparador_7' has 5 connections declared, but only 3 given [/home/anxiety/Dropbox/tec/2021/periodo 2/digitales/git_end/tareas_diseño/tarea_diseño_2/diseño_2/diseño_2.srcs/sources_1/new/main.v:37]
+INFO: [Synth 8-6157] synthesizing module 'bin_bcd' [/home/anxiety/Dropbox/tec/2021/periodo 2/digitales/git_end/tareas_diseño/tarea_diseño_2/diseño_2/diseño_2.srcs/sources_1/new/bin_bcd.v:5]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/anxiety/Dropbox/tec/2021/periodo 2/digitales/git_end/tareas_diseño/tarea_diseño_2/diseño_2/diseño_2.srcs/sources_1/new/bin_bcd.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'bin_bcd' (9#1) [/home/anxiety/Dropbox/tec/2021/periodo 2/digitales/git_end/tareas_diseño/tarea_diseño_2/diseño_2/diseño_2.srcs/sources_1/new/bin_bcd.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'main' (10#1) [/home/anxiety/Dropbox/tec/2021/periodo 2/digitales/git_end/tareas_diseño/tarea_diseño_2/diseño_2/diseño_2.srcs/sources_1/new/main.v:1]
+WARNING: [Synth 8-85] always block has no event control specified [/home/anxiety/Dropbox/tec/2021/periodo 2/digitales/git_end/tareas_diseño/tarea_diseño_2/diseño_2/diseño_2.srcs/sources_1/new/main_tb.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'main_tb' (11#1) [/home/anxiety/Dropbox/tec/2021/periodo 2/digitales/git_end/tareas_diseño/tarea_diseño_2/diseño_2/diseño_2.srcs/sources_1/new/main_tb.v:1]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2442.391 ; gain = 0.000 ; free physical = 186 ; free virtual = 7604
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2442.391 ; gain = 0.000 ; free physical = 210 ; free virtual = 7629
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-2L
+INFO: [Device 21-403] Loading part xc7a35tcpg236-2L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2450.184 ; gain = 7.793 ; free physical = 210 ; free virtual = 7628
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'bcd_reg' [/home/anxiety/Dropbox/tec/2021/periodo 2/digitales/git_end/tareas_diseño/tarea_diseño_2/diseño_2/diseño_2.srcs/sources_1/new/bin_bcd.v:12]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2450.184 ; gain = 7.793 ; free physical = 185 ; free virtual = 7604
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    7 Bit       Adders := 1     
++---Registers : 
+	                7 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input    7 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2450.184 ; gain = 7.793 ; free physical = 872 ; free virtual = 8293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++------------+---------------------+---------------+----------------+
+|Module Name | RTL Object          | Depth x Width | Implemented As | 
++------------+---------------------+---------------+----------------+
+|bin_bcd     | bcd                 | 128x8         | LUT            | 
+|main_tb     | uut/codificador/bcd | 128x8         | LUT            | 
++------------+---------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2450.184 ; gain = 7.793 ; free physical = 870 ; free virtual = 8292
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2450.184 ; gain = 7.793 ; free physical = 869 ; free virtual = 8291
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2450.184 ; gain = 7.793 ; free physical = 849 ; free virtual = 8281
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2450.184 ; gain = 7.793 ; free physical = 849 ; free virtual = 8281
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2450.184 ; gain = 7.793 ; free physical = 849 ; free virtual = 8281
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2450.184 ; gain = 7.793 ; free physical = 849 ; free virtual = 8281
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2450.184 ; gain = 7.793 ; free physical = 849 ; free virtual = 8281
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2450.184 ; gain = 7.793 ; free physical = 849 ; free virtual = 8281
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++-+-----+------+
+| |Cell |Count |
++-+-----+------+
++-+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |     0|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2450.184 ; gain = 7.793 ; free physical = 849 ; free virtual = 8281
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 9 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2450.184 ; gain = 7.793 ; free physical = 849 ; free virtual = 8282
+Synthesis Optimization Complete : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2450.191 ; gain = 7.793 ; free physical = 849 ; free virtual = 8282
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2450.191 ; gain = 0.000 ; free physical = 841 ; free virtual = 8273
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2450.191 ; gain = 0.000 ; free physical = 834 ; free virtual = 8264
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 5d9f724f
+INFO: [Common 17-83] Releasing license: Synthesis
+33 Infos, 9 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:16 . Memory (MB): peak = 2450.191 ; gain = 8.012 ; free physical = 888 ; free virtual = 8317
+INFO: [Common 17-1381] The checkpoint '/home/anxiety/Dropbox/tec/2021/periodo 2/digitales/git_end/tareas_diseño/tarea_diseño_2/diseño_2/diseño_2.runs/synth_1/main_tb.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file main_tb_utilization_synth.rpt -pb main_tb_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Oct 24 23:00:18 2021...
