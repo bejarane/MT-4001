@@ -27,7 +27,7 @@ module comparador_17(
     output menor,
     output mayor
     );
-    
+    //assign mayor = 1'b0;
     assign igual = (A==B)?1'b1:1'b0;
     assign menor = (A<B)?1'b1:1'b0;
     assign mayor = (A>B)?1'b1:1'b0;  
